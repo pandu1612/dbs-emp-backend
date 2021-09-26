@@ -11,7 +11,6 @@ public interface EmployeeService {
 
 	public Optional<Employee> findById(Long employeeId);
 
-
 	public Employee getByEmailIdAndPassword(String emailId, String password);
 
 }

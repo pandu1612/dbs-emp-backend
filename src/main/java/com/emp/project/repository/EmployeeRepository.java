@@ -8,9 +8,9 @@ import org.springframework.stereotype.Repository;
 import com.emp.project.entity.Employee;
 
 @Repository
-public interface EmployeeRepository extends JpaRepository<Employee, Long>{
+public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
-	@Query(value="select * from User where email_address = :emailId and password = :password",nativeQuery = true)
-	Employee getByEmailIdAndPassword(@Param("emailId")String emailId,@Param("password")String password);
+	@Query(value = "select * from User where email_address = :emailId and password = :password", nativeQuery = true)
+	Employee getByEmailIdAndPassword(@Param("emailId") String emailId, @Param("password") String password);
 
 }
